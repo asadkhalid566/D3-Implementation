@@ -1,10 +1,70 @@
+/* Page background */
 body {
-  font-family: 'Arial', sans-serif; 
+    font-family: "Inter", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
+    color: #222;
 }
 
-.responsive-svg-container {
-  margin-right: auto;
-  margin-left: auto;
-  width: 100%;
-  max-width: 800px;
+/* Title styling */
+h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 30px;
+    color: #222;
+}
+
+/* Form area */
+#form {
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+}
+
+/* Slider styling */
+input[type="range"] {
+    width: 300px;
+    margin: 0 15px;
+}
+
+#yearValue {
+    font-weight: bold;
+    margin-left: 10px;
+    color: #444;
+}
+
+/* Chart container centering */
+#chart {
+    width: 900px;
+    margin: 10px auto 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.08);
+}
+
+/* Tooltip styling */
+div.tooltip {
+    position: absolute;
+    background: white;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    pointer-events: none;
+    font-size: 14px;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 950px) {
+    #chart, #form {
+        width: 95%;
+    }
+
+    input[type="range"] {
+        width: 60%;
+    }
 }

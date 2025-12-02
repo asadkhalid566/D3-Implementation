@@ -6,24 +6,21 @@
 	<title>Spotify Song Popularity</title>
 	<link rel="stylesheet" type="text/css" href="./style.css">
 </head>
-<body>
-	<div class="responsive-svg-container" id="form">
-		<h2>Average Spotify Song Popularity Per Year</h2>
 
-		<label for="yearSlider">Year</label>
-		<input id="yearSlider" type="range" value="2020" min="2010" max="2020" oninput="yearText.value=yearSlider.value" />
-		<input id="yearText" type="number" value="2020" min="2010" max="2020" oninput="yearSlider.value=yearText.value" disabled />
-		
-		<label for="sort" style="margin-left:30px">Sort by</label>
-		<select name="sort" id="sort">
-			<option value="alphabet">Alphabetical</option>
-			<option value="pctAsce">Percentage of pay gap, ascending</option>
-			<option value="pctDesc">Percentage of pay gap, descending</option>
-		</select>
+<body>
+
+	<h2>Average Spotify Song Popularity Per Year</h2>
+
+	<div id="form">
+		<label>Show data until year:</label>
+		<input id="yearSlider" type="range">
+		<span id="yearValue"></span>
 	</div>
-	<div id="chart" class="responsive-svg-container"></div>
- 	
+
+	<div id="chart"></div>
+
 	<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 	<script src="js/script.js"></script>
+
 </body>
 </html>
